@@ -15,7 +15,7 @@ def draw():
     
 
     screen.clear
-    screen.fill("green")
+    screen.blit("bakgrund",(0,0))
     räv.draw()
     apelsin.draw()
     
