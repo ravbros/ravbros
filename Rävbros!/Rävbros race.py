@@ -15,7 +15,7 @@ def draw():
     
 
     screen.clear
-    screen.fill("brown")
+    screen.fill("green")
     räv.draw()
     apelsin.draw()
     
