@@ -28,7 +28,7 @@ def börja():
     räv.x=50
     räv.y=550
     apelsin.x=750
-    apelsin.y=550
+    apelsin.y=550 
     HOPP=0
     
     
