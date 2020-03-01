@@ -7,7 +7,7 @@ apelsin=Actor("monster_left")
 räv.x=50
 räv.y=550
 apelsin.x=750
-apelsin.y=550
+apelsin.y=570
 HOPP=0
 speletkör=False
 
@@ -15,8 +15,10 @@ def draw():
     screen.clear
     screen.blit("bakgrund",(0,0))
     if speletkör:
+        screen.blit("mark",(0,570))
         räv.draw()
         apelsin.draw()
+        
     else:
         screen.draw.text("TRYCK PÅ MELLANSLAG FÖR EN ÖVERRASKNING",
                          center=(400,500),fontsize=30)
