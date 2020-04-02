@@ -13,7 +13,7 @@ def draw():
     for bit in Bitar:
         bit.draw()
     if endgame==True:
-        pass       
+        screen.blit("endgame",(0,0))       
          
 
 def ny_bit():
