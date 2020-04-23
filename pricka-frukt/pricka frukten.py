@@ -31,7 +31,7 @@ def on_mouse_down(pos):
         print ("Du är en noob")
         poäng=poäng-1 
         x=0
-        while x<1000:
+        while x<1:
                 NOOBS.append((randint(10,800),randint (10,600)))
                 x=x+1
     if poäng<-10:
