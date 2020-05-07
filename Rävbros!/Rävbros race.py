@@ -11,6 +11,7 @@ apelsin.y=570
 HOPP=0
 speletkör=False
 
+
 def draw():
     screen.clear
     screen.blit("bakgrund",(0,0))
@@ -34,6 +35,8 @@ def börja():
     
 def update():
     global räv,apelsin, speletkör,HOPP
+    if keyboard.x:
+        HOPP=60
     if speletkör:
         apelsin.x=apelsin.x-5
         if apelsin.x<0:

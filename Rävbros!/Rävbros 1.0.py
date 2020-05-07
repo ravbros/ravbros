@@ -35,7 +35,7 @@ def flytta_igelkott():
 
 def draw():
     if not börjat:
-        screen.blit("bakgrund")
+        screen.fill("blue")
         screen.draw.text(
             "Rävbros: 1.0 ",topleft=(270,100),fontsize=60)
         screen.draw.text("Design&Programming Tage Ekman, Lead testing Harry Ekman\n"
@@ -78,18 +78,18 @@ def börja_om():
 
 def update():
     global summa,spelet_slut,igelkott,börjat,maxpoäng,rav
-        if keyboard.left:
-            rav.x=rav.x-2
-            rav.image="fox_left"
-        if keyboard.right:
-            rav.x=rav.x+2
-            rav.image="fox"
-        if keyboard.up:
-            rav.y=rav.y-2
-        if keyboard.down:      
-             rav.y=rav.y+2
-            rav.x=max(10,min (rav.x, BREDD-30))
-            rav.y=max(10,min (rav.y, HOJD-30))
+    if keyboard.left:
+        rav.x=rav.x-2
+        rav.image="fox_left"
+    if keyboard.right:
+        rav.x=rav.x+2
+        rav.image="fox"
+    if keyboard.up:
+        rav.y=rav.y-2
+    if keyboard.down:      
+        rav.y=rav.y+2
+    rav.x=max(10,min (rav.x, BREDD-30))
+    rav.y=max(10,min (rav.y, HOJD-30))
    
     for i in igelkott:
         if i.riktning==1:
