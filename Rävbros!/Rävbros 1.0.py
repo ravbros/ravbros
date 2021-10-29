@@ -59,7 +59,7 @@ def draw():
         for i in igelkott:
             i.draw()
         screen.draw.text("summa: " + str(summa), color="blue", topleft=(10,10))
-        
+
 
 
 def börja_om():
@@ -70,7 +70,6 @@ def börja_om():
     placera_grej(mynt)
     igelkott=igelkott[:1]
     placera_grej(igelkott[0])
-    music.play("mario")
     börjat=True
     
                      
@@ -107,7 +106,6 @@ def update():
                      
         farlig_igelkott=i.colliderect(rav)
         if farlig_igelkott and not spelet_slut and börjat:
-            music.stop()
             sounds.död.play()
             spelet_slut=True
         if summa>maxpoäng:
@@ -136,7 +134,6 @@ def update():
     if not börjat and keyboard.space:   
         börja_om()
 
-    
     
 
 sounds.start.play()
