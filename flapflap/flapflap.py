@@ -107,25 +107,20 @@ def update():
         else:
             h.x=randint(800,1600)
             summa+=1
-        
-    else:
-        t.x=randint(800,1600)
-        t.y=randint(10,200)
-        summa+=1
-        ant_upp=0
-    if t.right>0:
+        if t.right>0:
             t.x-=2
-    else:
+        else:
             t.x=randint(800,1600)
             summa+=1
+   
+   
     if b.top<0 or b.bottom>560:
             spelet_slut=True
             upp_rek()
-
-    if b.collidepoint(f.x,f.y)or b.collidepoint(h.x,h.y)or b.collidepoint(t.x,t.y):
-        if not spelet_slut:
+    if not spelet_slut:
+        if b.collidepoint(f.x,f.y)or b.collidepoint(h.x,h.y)or b.collidepoint(t.x,t.y):
             upp_rek()
-        spelet_slut=True
+            spelet_slut=True
            
         
         
