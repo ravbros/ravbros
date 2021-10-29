@@ -73,7 +73,7 @@ def börja_om():
     spelet_slut=False
     placera_grej(mynt)
     igelkott=igelkott[:1]
-    placera_grej(igelkott[0]
+    placera_grej(igelkott[0])
     börjat=True
     
                      
