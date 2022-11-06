@@ -1,6 +1,6 @@
 def primtal(b):
     prim=True
-    for p in range (2,b):
+    for p in range (2,sqrt(b)):
         if b%p==0:
             prim=False
             break
